@@ -18,6 +18,15 @@ body {
   		width: 100%; /* Full width */
 	  
 }
+
+.logo {
+    display: display-outside;
+    vertical-align: top;
+    width: 100px;
+    height: 70px;
+    margin-right: 0px;
+    margin-top: 0px;    /* if you want it vertically middle of the navbar. */
+}
 .w3-allerta {
 	font-family: "Allerta Stencil", Sans-serif !important;
   }
