@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>Mor Nahum</title>
+
 </head>
 <body>
 <div id="menu">
@@ -136,7 +137,8 @@ My expectation from this course are very high and I want to learn many intrestin
 <div class="w3-container w3-black w3-center w3-allerta"><p class="w3-xlarge"><b>My playlist</b></p></div>
 <br/>
 <br/>
-<div align="center"><iframe width="560"  align="middle" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxhnpe8pN3TmtjcQM7zcYAKhQXPdOHS3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLq1LwNHYqfsj5NIEPuwAtpQWzGZRBzReW" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div align="center"><iframe async="" title="YouTube Playlist" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxhnpe8pN3TmtjcQM7zcYAKhQXPdOHS3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" ></iframe>
 <br/>
 </section>
 
@@ -196,26 +198,37 @@ My expectation from this course are very high and I want to learn many intrestin
     <label for="Name">Name:</label>
     <input id="Name" name="Name" type="text" size="25" required placeholder = "Your name...">
   </p>
-
   <p>
     <label for="Subject">Email:</label>
-    <input id="Subject" name="Subject" type="text" size="25" required placeholder = "Your email...">
-  </p>
-
-  <label for="Text">Message:</label>
-  <p>
-    <textarea id="Text" name="Text" rows="8" cols="40" required placeholder = "Your message...">
+    <input id="Subject" name="Email" type="text" size="25" required placeholder = "Your email...">
+  </p>   
+      <p class="container">
+        <label for="Text">Message:</label>
+      <textarea  id="Text" name="Text" rows="8" cols="35" data-emoji-picker="true">
     </textarea>
   </p>
+ 
+  <p><label for="emoji">Emoji:</label>
+  <select id="emoji">
+    <option value="&#128540">&#128540</option>
+    <option value="&#128512">&#128512</option>
+    <option value="&#128513">&#128513</option>
+    <option value="&#128514">&#128514</option>
+    <option value="&#128515">&#128515</option>
+    <option value="&#128516">&#128516</option>
+    <option value="&#128517">&#128517</option>
+  </select>
+</p>
 
   <input type="submit" value="Send">
   <input type="reset" value="Reset">
   </form>
 
-
+  
   <br/>
   <br/>
   <br/>
+  
   <br/>
   <br/>
 </section>
@@ -234,5 +247,13 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+
 </body>
+<script src="src/emojiPicker.js"></script>
+<script>
+  (() => {
+    new EmojiPicker()
+  })()
+</script>
 </html>

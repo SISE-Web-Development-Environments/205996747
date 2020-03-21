@@ -141,3 +141,10 @@ li a {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+  .container {
+	padding-top: 20px;
+	width: 300px;
+	margin: 0 auto;
+  }
