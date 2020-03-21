@@ -1,11 +1,18 @@
+body {
+	background-image: url('background3.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+  }
+
+
 #menu
 {
-	
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		overflow: visible;
-		background-color: rgb(255, 255, 255);
+		background: rgba(255,255,255,0.5);
 		position: fixed; /* Set the navbar to fixed position */
   		top: 0; /* Position the navbar at the top of the page */
   		width: 100%; /* Full width */
@@ -17,6 +24,8 @@
   
 li {
 	float: left;
+	background: none;
+
   }
 li a {
 	display: block;
@@ -27,8 +36,6 @@ li a {
  .paragraph {
 	font-family: Tahoma;
 	font-size: 20px;
-
-
  } 
  h3{
 	font-family: Tahoma;
