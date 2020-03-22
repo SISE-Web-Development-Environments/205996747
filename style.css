@@ -41,12 +41,15 @@ li a {
 	color: #000;
 	padding: 8px 16px;
 	text-decoration: none;
+	border-radius: 50px;
   }
 
  .paragraph  {
 	
 	font-size: 18px;
 	text-decoration: none !important;
+	font-weight:normal;
+	text-justify: inter-word;
  } 
 
 .paragraph1 {
@@ -55,8 +58,20 @@ li a {
 	font-size: 16px;
 	text-align: center;
 	text-decoration: none !important;
+	font-weight:normal;
+	text-justify: inter-word;
+
+
 }
 
+span.Questions{
+	border-color: black;
+	text-align: center;
+	color: gray;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-weight:bolder;
+
+}
  h3{
 	font-family: Tahoma;
 	font-weight:400;
